@@ -1,0 +1,83 @@
+.information-card {
+    display: inline-block;
+    width:  20rem;
+    padding: 1rem;
+    object-position: 50% 0;
+    background-color: white;
+    text-decoration: none;
+    color: rgb(44, 44, 44);
+    border: none;
+    border-radius: 0.25rem;
+    font-weight: 500;
+}
+
+.information-card > div {
+    padding: 0.425rem 0;
+}
+
+.information-card:hover {
+    opacity: 0.85;
+    cursor: pointer;
+}
+
+
+p {
+    font-weight: 400;
+} 
+
+
+.information-card > img {
+    width: 100%;
+    height: 11rem;
+    border-radius: 0.25rem;
+    object-fit: cover;
+}
+
+
+.grid-dashboard {
+    display: grid;
+    grid-template-areas: 'menu information';
+    grid-template-columns: 1fr 3fr;
+    gap: 2rem;
+    align-items: start;
+}
+
+.navMenu {
+    grid-area: menu;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.information {
+    grid-area: information;
+}
+
+.information-cards {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 1rem;  
+}
+
+.navbar-card {
+    display: grid;
+    text-align: start;
+    padding: 1rem;
+    background-color: white;
+    border: none;
+    border-radius: 0.25rem;
+    margin: 0;
+    font-weight: 500;
+    grid-template-columns: auto auto;
+    opacity: 90%;
+    align-items: center;
+}
+
+h3 {
+    font-weight: 500;
+}
+
+button.navbar-card:hover {
+    background-color: rgba(54, 100, 136, 0.25);
+    cursor: pointer;
+}

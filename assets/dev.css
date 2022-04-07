@@ -1,0 +1,9 @@
+.dev-tools {
+    position: absolute;
+    top: 1rem;
+    left: 1.5rem;
+}
+
+.dev-tool {
+    padding: 1rem;
+}

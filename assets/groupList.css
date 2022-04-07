@@ -1,0 +1,29 @@
+.group-list-table-body, .group-list-table-head {
+  background-color: rgba(250, 250, 250, 0.7);
+}
+
+.group-list-table {
+  padding: 0;
+  border-collapse: separate;
+  border-spacing: 0 1rem;
+  width: 80rem;
+  text-align: start;
+}
+
+.group-list-buttons {
+  display: flex;
+  gap: 1rem;
+  
+}
+
+.group-list-buttons > :first-of-type {
+  margin-left: auto;
+}
+.group-list-name:hover {
+  background-color: rgba(54, 100, 136, 0.25);
+  cursor: pointer;
+}
+.group-list-nextSurvey:hover {
+  background-color: rgba(54, 100, 136, 0.25);
+  cursor: pointer;
+}

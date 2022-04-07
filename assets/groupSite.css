@@ -1,0 +1,97 @@
+.group-site-gridContainer {
+  padding: 60px 70px;
+  width: 100%;
+  max-width: 105rem;
+  height: 100%;
+  column-gap: 2rem;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas:
+    "gruppenavn . . knapper knapper"
+    "beskrivelse beskrivelse . . ."
+    "intervall antall neste . deltakere"
+    "nyeste nyeste utvikling utvikling deltakere";
+}
+.group-site-buttons {
+  grid-area: knapper;
+  place-self: center;
+}
+.group-site-buttons > button {
+  margin-left: 7px;
+}
+
+.group-site-h1 {
+  grid-area: gruppenavn;
+}
+
+.group-site-participantList-head, .group-site-participant {
+  padding: 10px;
+}
+
+.group-site-participantList-head {
+    font-weight: 500;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: var(--title-text);
+    text-align: start;
+    padding-left: 0px;
+}
+
+.group-site-participant {
+  background-color: white;
+  opacity: 80%;
+  border-radius: 0.25rem;
+  margin: 10px 0px;
+}
+  
+.group-site-participantList {
+    grid-area: deltakere;
+    width: 15rem;
+    height: 1rem;
+}
+
+.group-site-description {
+  grid-area: beskrivelse;
+  color: var(--title-text);
+  padding: 10px;
+}
+.group-site-donutChart {
+  grid-area: nyeste;
+  height: 2;
+}
+.group-site-lineChart {
+  width: 800px;
+  grid-area: utvikling;
+  padding-top: 70px;
+}
+
+.group-site-interval {
+  grid-area: intervall;
+  padding: 5px 10px;
+  height: 20px;
+}
+
+.group-site-count {
+  grid-area: antall;
+  height: 100px;
+}
+
+.group-site-next {
+  grid-area: neste;
+  height: 100px;
+}
+
+.group-site-interval,
+.group-site-count,
+.group-site-next {
+  border: 1px solid var(--title-text);
+  background-color: white;
+  opacity: 80%;
+  padding: 15px 15px;
+  padding-bottom: 5px;
+  border-radius: 0.5rem;
+  width: 250px;
+  height: 5rem;
+}

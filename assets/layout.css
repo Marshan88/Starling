@@ -1,0 +1,23 @@
+/* || Grid layout */
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "main main main"
+    "footer footer footer";
+  grid-template-rows: 1fr 15fr 0fr;
+  height: 100vh;
+}
+
+.grid-main {
+  grid-area: main;
+  display: grid;
+  place-items: center;
+  overflow-y: auto;
+}
+
+.grid-header {
+  grid-area: header;
+  background-color: rgba(54, 100, 136, 0.25);
+}

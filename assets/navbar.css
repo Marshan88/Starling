@@ -1,0 +1,41 @@
+.material-icons {
+    color: var(--title-text);
+}
+
+.material-icons:hover {
+    color: white;
+    cursor: pointer;
+    opacity: 70%;
+}
+
+.navbar-main {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    height: 100%;
+    gap: 1rem;
+    padding: 0rem 2rem;
+}
+
+.icon-button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    display: flex;
+}
+
+.icon-button:hover {
+    background-color: transparent;
+}
+
+.logo {
+    margin-right: auto;
+    height: 4rem;
+}
+
+.logo > img {
+    padding: 0.25rem;
+    height: 4rem;
+    color: var(--title-text);
+    opacity: 0.8;
+}
